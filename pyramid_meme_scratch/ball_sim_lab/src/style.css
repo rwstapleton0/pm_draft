@@ -1,0 +1,100 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+  padding: 0px;
+  border: 0px;
+}
+
+button::-moz-focus-inner {
+  padding: 0px;
+  border: 0px;
+}
+
+h3 {
+  margin: 0 0 12px 0 ;
+}
+
+button {
+  border: none;
+  width: 100%;
+  margin: auto 0;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  line-height: 0;
+}
+
+.game-ui-open {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 0 18px;
+  padding-top: 12px;
+  background-color: #72727265;
+  border-radius: 20px;
+  border: 3px solid #F9F7C9;
+}
+.game-ui-open-inner {
+  margin-bottom: 8px;
+}
+
+.game-ui-closed {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #72727265;
+  border-radius: 20px;
+  border: 2px solid #F9F7C9;
+}
+.game-ui-closed button {
+  padding: 8px;
+}
+
+.menu-button {
+  background-color: #72727265;
+  border-radius: 12px;
+  margin-bottom: 6px;
+  transition: background-color 100ms;
+}
+
+.menu-button:hover {
+  background-color: #727272bd;
+}
+
+.popup-ui {
+  position: absolute;
+  background-color: #72727265;
+  border-radius: 20px;
+  border: 2px solid #F9F7C9;
+  line-height: 0;
+}
+
+.popup-ui button {
+  padding: 8px;
+}
